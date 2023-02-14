@@ -1,0 +1,30 @@
+{
+  "name": "@revokence/xibolete",
+  "version": "0.1.0",
+  "description": "Action based authorization for NodeJS applications",
+  "main": "lib/index.js",
+  "scripts": {
+    "commitlint": "commitlint --from b30386bf63aacda01deb6e570a5c603fd5498930",
+    "eslint": "eslint .",
+    "markdownlint": "markdownlint -c .markdownlint.json -i CHANGELOG.md '{,!(node_modules)/**/}*.md'",
+    "standards": "npm run markdownlint && npm run eslint",
+    "pretest": "npm run standards",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Revokence/xibolete.git"
+  },
+  "author": "Gustavo Martins <gustavo_martins92@hotmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Revokence/xibolete/issues"
+  },
+  "homepage": "https://github.com/Revokence/xibolete#readme",
+  "devDependencies": {
+    "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "@gustmartins/standardization": "github:gustmartins/standardization"
+  }
+}
